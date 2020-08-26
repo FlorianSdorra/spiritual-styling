@@ -1,5 +1,8 @@
 import React from 'react';
-import './cozy-card.scss'
+import './cozy-card.scss';
+
+import logo from '../assets/images/logo.png';
+import india from '../assets/images/narayan-gopalan.png';
 
 const CozyCard = () => {
     return(
@@ -15,14 +18,12 @@ const CozyCard = () => {
             <div className="middle">
                 <div className="egg"></div>
                 <div className="corners">
-                    <div>
-                        <p>Test</p>
+                    <img src={logo} alt="logo" className="logo"></img>
+                    <div className="bottom-left">
+                        <p>"LOVE is the abscence of JUDGEMENT."</p>
                     </div>
-                    <div>
-                        <p>Test</p>
-                    </div>
-                    <div>
-                        <p>Test</p>
+                    <div className="top-right">
+                        <p>Florian Sdorra</p>
                     </div>
                 </div>
             </div>
