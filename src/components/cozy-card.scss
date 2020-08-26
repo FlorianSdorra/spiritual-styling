@@ -1,3 +1,47 @@
 * {
     margin: 0;
+    box-sizing: border-box;
 }
+
+.cozy-card {
+    width: 30em;
+    height: 38em;
+    background-color: blanchedalmond;
+
+    display: flex;
+    flex-direction: column;
+
+    .top {
+        columns: 2;
+        column-rule: solid black 1px;
+        padding: 1em;
+        text-align: center;
+    }
+    .middle {
+        flex-grow: 1;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black; 
+        position: relative;
+        display: grid;
+        
+
+        .egg {
+            width: 150px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: black;
+            position: absolute;
+            justify-self: center;
+            top: 27%;
+
+            border-radius: 50% 50% 50% 40% / 60% 60% 40% 30%;
+        }
+    }
+    .bottom {
+        columns: 2;
+        column-rule: solid black 1px;
+        padding: 1em;
+        text-align: center;
+    }
+}
+
